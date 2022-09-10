@@ -225,6 +225,8 @@ The programs will NOT provide reliable results when applied to simulations with 
 
 The programs assume that the simulation box is rectangular and that periodic boundary conditions are applied in all three dimensions.
 
+The programs have trouble dealing with gromacs preprocessor commands in the itp file. Try to avoid them.
+
 The programs always use center of _geometry_, instead of center of _mass_.
 
 The programs have only been tested on Linux. Probably will not work on anything that is not UNIX-like.
