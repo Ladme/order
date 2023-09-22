@@ -1,0 +1,19 @@
+{
+    "title": "Order - Code for Coarse-Grained Lipid Order Calculations",
+    "description": "Code for the calculation of coarse-grained lipid order from Gromacs simulation trajectories",
+    "creators": [
+        {
+            "name": "Ladislav Bartoš",
+            "affiliation": "CEITEC – Central European Institute of Technology, Masaryk University, Czech Republic"
+        }
+    ],
+    "keywords": [
+        "gromacs",
+        "molecular dynamics",
+        "lipid membrane",
+        "lipid order"
+    ],
+    "license": "mit-license",
+    "access_right": "open",
+    "upload_type": "software"
+}
