@@ -50,12 +50,12 @@ Use the flag `-p` to specify atoms identifying lipid heads. This selection is on
 ### Example
 
 ```
-order -c system.gro -f md.xtc -p "name NC3 NH3" -n groups.ndx
+order -c system.gro -f md.xtc -n groups.ndx
 ```
 
 This command will calculate lipid order parameters for bonds of atoms in the ndx group `Membrane` (default option) based on the coordinates from the trajectory `md.xtc` (every trajectory frame will be analyzed). The information about ndx groups will be read from `groups.ndx` (flag `-n`). In case there is no ndx group named `Membrane` or in case the `groups.ndx` file could not be read, `order` will complain that no atoms have been selected for the analysis and will exit.
 
-Lipid molecules of the ndx group `Membrane` will be assigned to the upper or lower membrane leaflet based on the position of their 'headgroup identifier', which in this case is the atom with name `NC3` or `NH3` (flag `-p`). In case the 'headgroup identifier' is positioned above the geometric center of the selection `Membrane`, the lipid molecule is assigned to the upper leaflet. In contrast, if the 'headgroup identifier' is positioned below the geometric center of the selection `Membrane`, the lipid molecule is assigned to the lower leaflet. This assignment will be performed for every trajectory frame.
+Lipid molecules of the ndx group `Membrane` will be assigned to the upper or lower membrane leaflet based on the position of their 'headgroup identifier', which in this case is the atom with name `PO4` (default option). In case the 'headgroup identifier' is positioned above the geometric center of the selection `Membrane`, the lipid molecule is assigned to the upper leaflet. In contrast, if the 'headgroup identifier' is positioned below the geometric center of the selection `Membrane`, the lipid molecule is assigned to the lower leaflet. This assignment will be performed for every trajectory frame.
 
 The information about bonds between the coarse-grained lipids will be read from `martini_v3.0.0_phospholipids_v1.itp` (default option).
 
