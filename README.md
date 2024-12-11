@@ -2,6 +2,10 @@
 
 [![DOI](https://zenodo.org/badge/534343880.svg)](https://zenodo.org/badge/latestdoi/534343880)
 
+---
+**⚠️ This program has been fully replaced by [`gorder`](https://github.com/Ladme/gorder). Other than for reproducibility, there is no reason to use this software. [`gorder`](https://github.com/Ladme/gorder) can do everything that `order` does, but it is more robust, faster, easier to install and use, and offers many additional features. ⚠️**
+---
+
 This repository contains two programs: `order` and `ordermap`.
 
 `order` is a much faster and more general version of the Martini [do-order script](http://www.cgmartini.nl/index.php/downloads/tools/229-do-order) for the calculation of coarse-grained lipid order parameters. `order` can be applied to any coarse-grained lipids which `.itp` file is provided and it does not require Gromacs. The calculated lipid order parameters are provided separately for every bond of every lipid molecule type of every membrane leaflet.
